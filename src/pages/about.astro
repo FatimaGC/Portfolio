@@ -8,13 +8,15 @@ import Nav from '../components/Nav.astro';
 	<head>
 		<MainHead title="About | Fatima Guzman" description="About Fatima Guzman" />
 		<style>
-			.heroImg {
+			/* .heroImg {
 				max-height: 24rem;
 				object-fit: cover;
 				overflow: hidden;
-			}
+			} */
 
-			.heroImg img {
+			.heroImg {
+				height: 350px;
+				object-fit: cover;
 				width: 100%;
 			}
 
@@ -33,13 +35,11 @@ import Nav from '../components/Nav.astro';
 		<Nav />
 		<div class="wrapper">
 			<h1>About Fatima</h1>
-			<div class="heroImg">
-				<img
-					width="1400"
-					height="350"
-					src="https://images.unsplash.com/photo-1581977012607-4091712d36f9?auto=format&fit=crop&w=1400&h=350&q=75"
+			<!-- <div class="heroImg"> -->
+				<img class="heroImg"
+					src="../assets/desk.jpg"
 				/>
-			</div>
+			<!-- </div> -->
 			<div class="bio wrapper">
 				<p>
 					My career trajectory took many turns to get to where I am today, from film editing to fraud prevention and a 
