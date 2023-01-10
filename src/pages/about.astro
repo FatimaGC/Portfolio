@@ -8,13 +8,15 @@ import Nav from '../components/Nav.astro';
 	<head>
 		<MainHead title="About | Fatima Guzman" description="About Fatima Guzman" />
 		<style>
-			.heroImg {
+			/* .heroImg {
 				max-height: 24rem;
 				object-fit: cover;
 				overflow: hidden;
-			}
+			} */
 
-			.heroImg img {
+			.heroImg {
+				height: 350px;
+				object-fit: cover;
 				width: 100%;
 			}
 
@@ -33,43 +35,31 @@ import Nav from '../components/Nav.astro';
 		<Nav />
 		<div class="wrapper">
 			<h1>About Fatima</h1>
-			<div class="heroImg">
-				<img
-					width="1400"
-					height="350"
-					src="https://images.unsplash.com/photo-1581977012607-4091712d36f9?auto=format&fit=crop&w=1400&h=350&q=75"
+			<!-- <div class="heroImg"> -->
+				<img class="heroImg"
+					src="../assets/desk.jpg"
 				/>
-			</div>
+			<!-- </div> -->
 			<div class="bio wrapper">
 				<p>
-					Cream cheese say cheese stinking bishop. Brie fondue hard cheese bocconcini feta camembert
-					de normandie babybel airedale. Red leicester swiss manchego mascarpone pepper jack
-					airedale fromage frais ricotta. Cheese and biscuits cauliflower cheese boursin.
+					My career trajectory took many turns to get to where I am today, from film editing to fraud prevention and a 
+					variety of positions and industries in between.
 				</p>
+
 				<p>
-					Pepper jack cheesy feet cheese slices. Halloumi port-salut queso caerphilly roquefort
-					cheese slices cheesy feet rubber cheese. Cheese slices smelly cheese pecorino macaroni
-					cheese feta blue castello roquefort edam. Babybel pepper jack airedale cheddar fromage
-					frais manchego.
+					I became interested in the world of web development in 2019, but it wasn't until the year that must not be named
+					(aka: 2020) that I really took my career transition to the next level. I really wanted more out of my professional
+					life, so I began to network and even obtained ongoing mentorship from multiple experienced web developers. 
 				</p>
+
 				<p>
-					Cauliflower cheese lancashire macaroni cheese. Cheeseburger babybel cheese on toast
-					airedale cauliflower cheese who moved my cheese roquefort paneer. Stinking bishop cheddar
-					taleggio port-salut port-salut stinking bishop cheesy grin babybel. Blue castello feta
-					everyone loves brie.
+					Though it's been tough while working full-time, all of the self-learning, online courses, workshops, and mentorships
+					have prepared me for a Junior Developer role that I'm very much looking forward to!
 				</p>
-				<p>
-					Goat squirty cheese cut the cheese. Cheese and wine cheddar fondue airedale cottage cheese
-					camembert de normandie feta babybel. Rubber cheese melted cheese pecorino port-salut
-					fondue gouda cheese on toast cheesy feet. Feta edam everyone loves cheese strings
-					camembert de normandie.
-				</p>
-				<p>
-					Caerphilly monterey jack goat. Squirty cheese cheesy grin hard cheese cheese strings
-					cheese and biscuits croque monsieur smelly cheese danish fontina. Swiss cheese triangles
-					everyone loves mascarpone cheese on toast who moved my cheese lancashire cheeseburger.
-					Fromage frais fromage frais cheese and biscuits stinking bishop cauliflower cheese.
-				</p>
+				
+				
+				
+				
 			</div>
 		</div>
 		<Footer />
