@@ -1,10 +1,10 @@
-import 
+import React from "react"; 
+import "./styles.css";
 
 function Button() {
+    
     return (
-        <button>
-            
-        </button>
+        <button onClick={() => console.log('Clicked!')}>Click here!</button>
     )
 }
 
