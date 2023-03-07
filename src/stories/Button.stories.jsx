@@ -17,7 +17,7 @@ export const Primary = Template.bind({});
 
 Primary.args = {  
     primary: true,  
-    children: "Hello",
+    children: "Label",
     // onClick: () => alert("Hi"),
     label: 'Button',
 };
