@@ -1,10 +1,10 @@
 import React from "react"; 
-import "./styles.css";
+import './styles.css';
 
-function Button() {
-    
+function Button({children="", onClick=() => undefined}) {
     return (
-        <button onClick={() => console.log('Clicked!')}>Click here!</button>
+        <button className="button" onClick={() => onClick()}>{children}</button>
+        
     )
 }
 

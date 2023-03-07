@@ -11,12 +11,14 @@ export default {
     },
 };
 
-const Template = (args) => <Button {...args} />;
+const Template = (args) => <Button {...args} ></Button>;
 
 export const Primary = Template.bind({});
 
 Primary.args = {  
     primary: true,  
+    children: "Hello",
+    // onClick: () => alert("Hi"),
     label: 'Button',
 };
 
