@@ -20,5 +20,6 @@ Primary.args = {
     children: "Label",
     // onClick: () => alert("Hi"),
     label: 'Button',
+    href: "https://www.google.com/"
 };
 
