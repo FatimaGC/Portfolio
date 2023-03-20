@@ -8,3 +8,11 @@
     padding: 20px 30px;
     width: 130px;
 }
+
+.link {
+  display: inline-block;
+  font-family: sans-serif;
+  padding: 20px 0px;
+  text-align: center;
+  text-decoration: none;
+}
