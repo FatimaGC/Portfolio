@@ -1,12 +1,12 @@
 import React from "react"; 
 import './styles.css';
 
-function Button({children="", onClick=() => undefined, href=undefined}) {
+function Button({children="", onClick=() => undefined, href=undefined, colorScheme="PRIMARY"}){
 
     return href ? (   
-            <a className="button link" onClick={() => onClick()} href={href}>{children}</a>
+            <a className={`button button--color-scheme--${colorScheme} link`} onClick={() => onClick()} href={href}>{children}</a>
         ) : (
-            <button className="button" onClick={() => onClick()}>{children}</button>
+            <button className={`button button--color-scheme--${colorScheme} link`} onClick={() => onClick() }>{children}</button>
         )
 }
 
