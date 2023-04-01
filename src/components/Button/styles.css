@@ -4,6 +4,7 @@
     color: white;
     filter: drop-shadow(0 2px 4px #92a1ad);
     font-size: 20px;
+    transition: opacity 0.5s;
     padding: 20px 30px;
     width: 130px;
 }
@@ -18,10 +19,12 @@
 
 .button--color-scheme--PRIMARY {
   background-color: #2196f3;
-  transition: opacity 0.5s;
 }
 
-.button--color-scheme--PRIMARY:hover {
+.button:hover {
   opacity: 0.7;
-  
+}
+
+.button:focus {
+  outline: 2px solid gray;
 }
