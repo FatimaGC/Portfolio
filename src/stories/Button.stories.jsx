@@ -20,7 +20,8 @@ Primary.args = {
     children: "Label",
     // onClick: () => alert("Hi"),
     label: 'Button',
-    href: "",
-    colorScheme: "PRIMARY"
+    href: "https://www.google.com/",
+    colorScheme: "PRIMARY",
+    isDisabled: false
 };
 
