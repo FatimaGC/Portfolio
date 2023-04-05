@@ -8,6 +8,11 @@ export default {
 
     argTypes: {
         backgroundColor: {control: 'color'},
+        onClick: {
+            table: {
+              category: 'Events',
+            },
+          },
     },
 };
 
