@@ -1,0 +1,35 @@
+  .button {
+    border-radius: 5px;
+    border-style: none;
+    color: white;
+    filter: drop-shadow(0 2px 4px #92a1ad);
+    font-size: 20px;
+    padding: 20px 30px;
+    width: 130px;
+}
+
+.link {
+  display: inline-block;
+  font-family: sans-serif;
+  padding: 20px 0px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.button--color-scheme--PRIMARY {
+  background-color: #2196f3;
+}
+
+.button:hover {
+  background-color: #80bded;
+}
+
+.button:focus {
+  outline: 2px solid gray;
+}
+
+.button[disabled] {
+  background-color: #e0e0e0;
+  color: #8b8b8b;
+  pointer-events: none;
+}
