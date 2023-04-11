@@ -21,12 +21,24 @@ const Template = (args) => <Button {...args} ></Button>;
 export const Primary = Template.bind({});
 
 Primary.args = {  
-    primary: true,  
+    variant: "PRIMARY",
+    // primary: true,  
     children: "Label",
     // onClick: () => alert("Hi"),
     label: 'Button',
     href: "https://www.google.com/",
-    colorScheme: "PRIMARY",
+    colorScheme: "FIRST",
     isDisabled: false
 };
 
+export const Secondary = Template.bind({});
+
+Secondary.args = {  
+  variant: "SECONDARY",
+  children: "Label",
+  // onClick: () => alert("Hi"),
+  label: 'Button',
+  href: "https://www.google.com/",
+  colorScheme: "FIRST",
+  isDisabled: false
+};
