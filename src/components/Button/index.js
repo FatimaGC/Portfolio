@@ -10,4 +10,4 @@ function Button({children="", onClick=() => undefined, href=undefined, colorSche
         )
 }
 
-export default Button
+export default Button;

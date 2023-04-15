@@ -39,6 +39,6 @@ Secondary.args = {
   // onClick: () => alert("Hi"),
   label: 'Button',
   href: "https://www.google.com/",
-  colorScheme: "FIRST",
+  colorScheme: "SECOND",
   isDisabled: false
 };

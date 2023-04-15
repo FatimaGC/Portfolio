@@ -1,3 +1,9 @@
+:root {
+  --color-white: #fff;
+  --color-primary: #2196f3;
+  --color-secondary: #9c27b0;
+}  
+  
   .button {
     border-radius: 5px;
     border-style: none;
@@ -50,8 +56,3 @@
 
 }
 
-.button--variant--TERTIARY {
-  background-color: #fff;
-  color: #2196f3;
-  filter: none;
-}
