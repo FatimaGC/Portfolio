@@ -4,6 +4,8 @@
   --color-primary-hover: #80bded;
   --color-secondary: #9c27b0;
   --color-secondary-hover: #c25fd3;
+  --color-danger: #d02e2e;
+  --color-danger-hover: #f43a3a;
 }  
   
 .button {
@@ -47,6 +49,14 @@
 
 .button--color-scheme--SECONDARY:hover {
   background-color: var(--color-secondary-hover);
+}
+
+.button--color-scheme--DANGER {
+  background-color: var(--color-danger);
+}
+
+.button--color-scheme--DANGER:hover {
+  background-color: var(--color-danger-hover);
 }
 
 /* BUTTON VARIANTS */
