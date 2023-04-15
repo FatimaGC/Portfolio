@@ -6,39 +6,12 @@
   --color-secondary-hover: #c25fd3;
 }  
   
-  .button {
-    border-radius: 5px;
-    border-style: none;
+.button {
     color: var(--color-white);
-    filter: drop-shadow(0 2px 4px #92a1ad);
     font-size: 20px;
     padding: 20px 30px;
     width: 130px;
 }
-
-.link {
-  display: inline-block;
-  font-family: sans-serif;
-  padding: 20px 0px;
-  text-align: center;
-  text-decoration: none;
-}
-
- .button--color-scheme--PRIMARY {
-  background-color: var(--color-primary);
- }
- 
-.button--color-scheme--PRIMARY:hover {
-  background-color: var(--color-primary-hover);
-}
-/* 
-.button--color-scheme--SECOND {
-  background-color: #9c27b0;
-} */
-
-/* .button--color-scheme--SECOND:hover {
-  background-color: #c25fd3;
-} */
 
 .button:focus {
   outline: 2px solid gray;
@@ -49,6 +22,40 @@
   color: #8b8b8b;
   pointer-events: none;
 }
+
+.link {
+  display: inline-block;
+  font-family: sans-serif;
+  padding: 20px 0px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* PRIMARY BUTTON STYLES */
+
+.button--color-scheme--PRIMARY {
+  background-color: var(--color-primary);
+ }
+ 
+.button--color-scheme--PRIMARY:hover {
+  background-color: var(--color-primary-hover);
+}
+
+.button--variant--PRIMARY {
+  border-radius: 5px;
+  filter: drop-shadow(0 2px 4px #92a1ad);
+}
+
+/* 
+.button--color-scheme--SECOND {
+  background-color: #9c27b0;
+} */
+
+/* .button--color-scheme--SECOND:hover {
+  background-color: #c25fd3;
+} */
+
+
 
 /* .button--variant--SECONDARY {
   background-color: #fff;
