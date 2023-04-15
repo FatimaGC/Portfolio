@@ -27,7 +27,7 @@ Primary.args = {
     // onClick: () => alert("Hi"),
     label: 'Button',
     href: "https://www.google.com/",
-    colorScheme: "FIRST",
+    colorScheme: "PRIMARY",
     isDisabled: false
 };
 
@@ -39,6 +39,6 @@ Secondary.args = {
   // onClick: () => alert("Hi"),
   label: 'Button',
   href: "https://www.google.com/",
-  colorScheme: "SECOND",
+  colorScheme: "PRIMARY",
   isDisabled: false
 };
