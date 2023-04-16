@@ -40,25 +40,25 @@
   --buttonColor--primary: var(--color-primary);
  }
  
-/* .button--color-scheme--PRIMARY:hover {
-  background-color: var(--color-primary-hover);
-} */
+.button--color-scheme--PRIMARY:hover {
+  --buttonColor--primary: var(--color-primary-hover);
+}
 
 .button--color-scheme--SECONDARY {
   --buttonColor--primary: var(--color-secondary);
 }
 
-/* .button--color-scheme--SECONDARY:hover {
-  background-color: var(--color-secondary-hover);
-} */
+.button--color-scheme--SECONDARY:hover {
+  --buttonColor--primary: var(--color-secondary-hover);
+}
 
 .button--color-scheme--DANGER {
   --buttonColor--primary: var(--color-danger);
 }
 
-/* .button--color-scheme--DANGER:hover {
-  background-color: var(--color-danger-hover);
-} */
+.button--color-scheme--DANGER:hover {
+  --buttonColor--primary: var(--color-danger-hover);
+}
 
 /* BUTTON VARIANTS */
 
@@ -67,11 +67,17 @@
   filter: drop-shadow(0 2px 4px #92a1ad);
 }
 
+.button--variant--PRIMARY:hover {
+  background-color: var(--buttonColor--primary);
+}
+
 .button--variant--SECONDARY {
   background-color: var(--color-white);
   color: var(--buttonColor--primary);
   outline: 2px solid var(--buttonColor--primary);
 }
+
+
 
 
 
