@@ -1,7 +1,7 @@
 import React from "react"; 
 import './styles.css';
 
-function Button({children="", onClick=() => undefined, href=undefined, colorScheme="SECONDARY", variant="PRIMARY", isDisabled="false"}){
+function Button({children="", onClick=() => undefined, href=undefined, colorScheme="PRIMARY", variant="PRIMARY", isDisabled="false"}){
 
     return href ? (   
             <a className={`button button--color-scheme--${colorScheme} button--variant--${variant} link`} disabled={isDisabled} onClick={() => onClick()} href={href}>{children}</a>

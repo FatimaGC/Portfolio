@@ -27,7 +27,7 @@ Primary.args = {
     // onClick: () => alert("Hi"),
     label: 'Button',
     href: "https://www.google.com/",
-    colorScheme: "DANGER",
+    colorScheme: "PRIMARY",
     isDisabled: false
 };
 
