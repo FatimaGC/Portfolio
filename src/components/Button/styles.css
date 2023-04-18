@@ -38,26 +38,20 @@
 
 .button--color-scheme--PRIMARY {
   --buttonColor--primary: var(--color-primary);
+  --buttonColor--hover: var(--color-primary-hover)
  }
  
-.button--color-scheme--PRIMARY:hover {
-  --buttonColor--primary: var(--color-primary-hover);
-}
 
-.button--color-scheme--SECONDARY {
+ .button--color-scheme--SECONDARY {
   --buttonColor--primary: var(--color-secondary);
+  --buttonColor--hover: var(--color-secondary-hover)
 }
 
-.button--color-scheme--SECONDARY:hover {
-  --buttonColor--primary: var(--color-secondary-hover);
-}
 
 .button--color-scheme--DANGER {
   --buttonColor--primary: var(--color-danger);
-}
+  --buttonColor--hover: var(--color-danger-hover);
 
-.button--color-scheme--DANGER:hover {
-  --buttonColor--primary: var(--color-danger-hover);
 }
 
 /* BUTTON VARIANTS */
@@ -68,7 +62,7 @@
 }
 
 .button--variant--PRIMARY:hover {
-  background-color: var(--buttonColor--primary);
+  background-color: var(--buttonColor--hover);
 }
 
 .button--variant--SECONDARY {
@@ -77,6 +71,11 @@
   outline: 2px solid var(--buttonColor--primary);
 }
 
+.button--variant--SECONDARY:hover {
+  background-color: var(--buttonColor--primary);
+  color: var(--color-white);
+  filter: drop-shadow(0 2px 4px #92a1ad);
+}
 
 
 
