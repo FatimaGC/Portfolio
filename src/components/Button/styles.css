@@ -1,6 +1,8 @@
 :root {
   --color-white: #fff;
   --color-primary: #2196f3;
+  --color-primary-disabled-background: #e0e0e0; 
+  --color-primary-disabled-font-color: #8b8b8b;
   --color-primary-hover: #80bded;
   --color-secondary: #9c27b0;
   --color-secondary-hover: #c034d8;
@@ -18,11 +20,11 @@
 
 .button:focus {
   outline: 2px solid gray;
-} */
+} 
 
 .button[disabled] {
-  background-color: #e0e0e0;
-  color: #8b8b8b;
+  background-color: var(--buttonStatus-disabled-background);
+  color: var(--buttonStatus-disabled-font-color);
   pointer-events: none;
 }
 
@@ -38,13 +40,18 @@
 
 .button--color-scheme--PRIMARY {
   --buttonColor--primary: var(--color-primary);
-  --buttonColor--hover: var(--color-primary-hover)
+  --buttonColor--hover: var(--color-primary-hover);
+  --buttonStatus-disabled-background: var(--color-primary-disabled-background);
+  --buttonStatus-disabled-font-color: var(--color-primary-disabled-font-color)
  }
  
 
  .button--color-scheme--SECONDARY {
   --buttonColor--primary: var(--color-secondary);
-  --buttonColor--hover: var(--color-secondary-hover)
+  --buttonColor--hover: var(--color-secondary-hover);
+  --buttonStatus-disabled: var(--color-white);
+  ;
+
 }
 
 
@@ -81,15 +88,4 @@
 
 
 
-
-
-
-
-/* .button--variant--SECONDARY {
-  background-color: #fff;
-  color: #2196f3;
-  filter: none;
-  outline: 2px solid #8fcaf8;
-
-} */
 
