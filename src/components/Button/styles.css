@@ -78,6 +78,7 @@
   --buttonStatus-disabled-outline: var(--color-primary-disabled-background);
   background-color: var(--color-white);
   color: var(--buttonColor--primary);
+  filter: drop-shadow(0 2px 4px #92a1ad);
   outline: 2px solid var(--buttonColor--primary);
 }
 
