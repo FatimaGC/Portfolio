@@ -66,21 +66,22 @@
   --buttonStatus-disabled-background: var(--color-primary-disabled-background);
   --buttonStatus-disabled-font-color: var(--color-primary-disabled-font-color);
   background-color: var(--buttonColor--primary);
+  border: 2px solid var(--buttonColor--primary);
   filter: drop-shadow(0 2px 4px #92a1ad);
 }
 
 .button--variant--PRIMARY:hover {
   background-color: var(--buttonColor--hover);
+  border: 2px solid var(--buttonColor--hover);
 }
 
 .button--variant--SECONDARY {
   --buttonStatus-disabled-font-color: var(--color-secondary-disabled-font-color);
   --buttonStatus-disabled-outline: var(--color-primary-disabled-background);
   background-color: var(--color-white);
-  
   color: var(--buttonColor--primary);
   filter: drop-shadow(0 2px 4px #92a1ad);
-  outline: 2px solid var(--buttonColor--primary);
+  border: 2px solid var(--buttonColor--primary);
 }
 
 .button--variant--SECONDARY:hover {
