@@ -54,15 +54,20 @@
 	--t-active: var(--c-blue);
 }
 
+html {
+	box-sizing: border-box;
+  }
+
+  *, *:before, *:after {
+	box-sizing: inherit;
+  }
+
 body {
 	margin: 0;
 	color: var(--t-fg);
 	font-family: 'Inter', 'system-ui', sans-serif;
 }
 
-* {
-	box-sizing: content-box;
-}
 
 img {
 	max-width: 100%;
@@ -75,14 +80,6 @@ a {
 
 h1 {
 	font-size: var(--f-u8);
-}
-
-.button {
-	display: inline-block;
-	border: 3px solid currentColor;
-	padding: 0.5em 1em;
-	font-weight: 700;
-	text-transform: uppercase;
 }
 
 .wrapper {

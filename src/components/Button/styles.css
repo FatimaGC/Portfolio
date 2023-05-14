@@ -1,11 +1,33 @@
-  .button {
+:root {
+  --color-white: #fff;
+  --color-primary: #2196f3;
+  --color-primary-disabled-background: #e0e0e0; 
+  --color-primary-disabled-font-color: #8b8b8b;
+  --color-primary-hover: #80bded;
+  --color-secondary: #9c27b0;
+  --color-secondary-disabled-font-color: #9e9e9e;
+  --color-secondary-hover: #c034d8;
+  --color-danger: #d02e2e;
+  --color-danger-hover: #f43a3a;
+}  
+  
+.button {
     border-radius: 5px;
-    border-style: none;
-    color: white;
-    filter: drop-shadow(0 2px 4px #92a1ad);
+    color: var(--color-white);
     font-size: 20px;
     padding: 20px 30px;
     width: 130px;
+}
+
+.button:focus {
+  outline: 2px solid gray;
+} 
+
+.button[disabled] {
+  background-color: var(--buttonStatus-disabled-background);
+  color: var(--buttonStatus-disabled-font-color);
+  outline: 2px solid var(--buttonStatus-disabled-outline);
+  pointer-events: none;
 }
 
 .link {
@@ -16,20 +38,60 @@
   text-decoration: none;
 }
 
+/* BUTTON COLOR-SCHEMES STYLES */
+
 .button--color-scheme--PRIMARY {
-  background-color: #2196f3;
+  --buttonColor--primary: var(--color-primary);
+  --buttonColor--hover: var(--color-primary-hover);
+  
+ }
+ 
+
+ .button--color-scheme--SECONDARY {
+  --buttonColor--primary: var(--color-secondary);
+  --buttonColor--hover: var(--color-secondary-hover);
+
 }
 
-.button:hover {
-  background-color: #80bded;
+
+.button--color-scheme--DANGER {
+  --buttonColor--primary: var(--color-danger);
+  --buttonColor--hover: var(--color-danger-hover);
+
 }
 
-.button:focus {
-  outline: 2px solid gray;
+/* BUTTON VARIANT STYLES */
+
+.button--variant--PRIMARY {
+  --buttonStatus-disabled-background: var(--color-primary-disabled-background);
+  --buttonStatus-disabled-font-color: var(--color-primary-disabled-font-color);
+  background-color: var(--buttonColor--primary);
+  border: 2px solid var(--buttonColor--primary);
+  filter: drop-shadow(0 2px 4px #92a1ad);
 }
 
-.button[disabled] {
-  background-color: #e0e0e0;
-  color: #8b8b8b;
-  pointer-events: none;
+.button--variant--PRIMARY:hover {
+  background-color: var(--buttonColor--hover);
+  border: 2px solid var(--buttonColor--hover);
 }
+
+.button--variant--SECONDARY {
+  --buttonStatus-disabled-font-color: var(--color-secondary-disabled-font-color);
+  --buttonStatus-disabled-outline: var(--color-primary-disabled-background);
+  background-color: var(--color-white);
+  border: 2px solid var(--buttonColor--primary);
+  color: var(--buttonColor--primary);
+  filter: drop-shadow(0 2px 4px #92a1ad);
+}
+
+.button--variant--SECONDARY:hover {
+  background-color: var(--buttonColor--primary);
+  color: var(--color-white);
+  filter: drop-shadow(0 2px 4px #92a1ad);
+}
+
+
+
+
+
+
