@@ -42,3 +42,15 @@ Secondary.args = {
   colorScheme: "PRIMARY",
   isDisabled: false
 };
+
+export const Tertiary = Template.bind({});
+
+Tertiary.args = {  
+  variant: "TERTIARY",
+  children: "Label",
+  // onClick: () => alert("Hi"),
+  label: 'Button',
+  href: "https://www.google.com/",
+  colorScheme: "PRIMARY",
+  isDisabled: false
+};

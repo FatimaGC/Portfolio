@@ -90,8 +90,10 @@
   filter: drop-shadow(0 2px 4px #92a1ad);
 }
 
-
-
+.button--variant--TERTIARY {
+  color: var(--color-primary);
+  font-size: 18px;
+}
 
 
 
