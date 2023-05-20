@@ -7,6 +7,7 @@
   --color-secondary: #9c27b0;
   --color-secondary-disabled-font-color: #9e9e9e;
   --color-secondary-hover: #c034d8;
+  --color-tertiary-hover: #bde0fc;
   --color-danger: #d02e2e;
   --color-danger-hover: #f43a3a;
 }  
@@ -43,16 +44,13 @@
 .button--color-scheme--PRIMARY {
   --buttonColor--primary: var(--color-primary);
   --buttonColor--hover: var(--color-primary-hover);
-  
  }
  
 
  .button--color-scheme--SECONDARY {
   --buttonColor--primary: var(--color-secondary);
   --buttonColor--hover: var(--color-secondary-hover);
-
 }
-
 
 .button--color-scheme--DANGER {
   --buttonColor--primary: var(--color-danger);
@@ -93,7 +91,12 @@
 .button--variant--TERTIARY {
   color: var(--color-primary);
   font-size: 18px;
+  width: 100px;
 }
 
+.button--variant--TERTIARY:hover {
+  background-color: var(--color-tertiary-hover);
+  width: 100px;
+}
 
 
