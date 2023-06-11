@@ -11,4 +11,15 @@ export default {
     },
 };
 
+const Template = (args) => <Avatar {...args} ></Avatar>;
 
+export const Primary = Template.bind({});
+
+Primary.args = {  
+    variant: "PRIMARY",
+    src: "https://place-puppy.com/public-images/index-page/image1/210x280-lg.jpg",
+    children: "Label",
+    href: "https://www.google.com/",
+    colorScheme: "PRIMARY",
+    isDisabled: false
+};
