@@ -1,0 +1,16 @@
+.paragraph {
+    color: pink;
+}
+
+.round {
+    border-radius: 50%;
+}
+
+/* PRIMARY VARIANT STYLES  */
+
+.avatar--variant--PRIMARY {
+    border-radius: 50%;
+    height: 100px;
+    object-fit: cover;
+    width: 100px;
+}
