@@ -19,7 +19,8 @@ Primary.args = {
     variant: "PRIMARY",
     src: "https://place-puppy.com/public-images/index-page/image1/210x280-lg.jpg",
     children: "Label",
-    href: "https://www.google.com/",
+    firstName: "Fatima",
+    lastName: "Guzman",
     colorScheme: "PRIMARY",
     isDisabled: false
 };

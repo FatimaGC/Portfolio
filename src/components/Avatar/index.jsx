@@ -1,12 +1,16 @@
 import React from "react"; 
 import './styles.css';
 
-function Avatar({src, variant="PRIMARY"}){
+function Avatar({src, variant="PRIMARY", firstName, lastName}){
+    const username = `${firstName || " "} ${lastName || " "}`.trim(); 
+    const shouldShowImage = Boolean(src || (!src && !username));
     return (
-            <figure>  
-                <img src={src} alt="A user's profile photo" className={`avatar--variant--${variant}`}/>
-            </figure>
-        )
+        <figure>
+            {
+                
+            }
+        </figure>
+    )
 }
 
 export default Avatar;
